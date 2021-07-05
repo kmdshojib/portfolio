@@ -14,40 +14,7 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 
-// //toggle Menu
-// var doc = document.getElement;
-// var w =window;
 
-// var currentScroll = prevScroll = w.scrollY || doc.scrollTop;
-// var currDriection = prevDir = 0;
-
-// const header =document.querySelector('.header')
-
-// const checkScroll = ()=>{
-//     currentScroll = w.scrollY || doc.scrollTop
-
-//     if(currentScroll > prevScroll){
-//         //scroll down to
-//         currDriection =2
-//     }else{
-//         currDriection =1
-//     }
-
-//     if(currDriection !== prevDir){
-//         toggleHeader()
-//     }
-//     prevDir = currDriection;
-//     prevScroll =currentScroll;
-// }
-// const toggleHeader = ()=>{
-//     if(currDriection === 2){
-//         header.classList.add('hide')
-//     }else if(currDriection ===1){
-//         header.classList.remove('hide')
-//     }
-// }
-
-// window.addEventListener('scroll', checkScroll);
 
 
 
@@ -91,29 +58,11 @@ navLinks.forEach(
     }
 )
 
-const showMobileNav = document.querySelector('.hamburger')
+const reloadPageLogo = document.getElementById('logo');
 
-// function burgurMenu(){
-//     document.addEventListener('click',()=>{
-//         showMobileNav.classList.toggle('is-active')
-//     })
-// }
-// burgurMenu()
-
-
-
-// const navLink =document.querySelectorAll('.nav_link')
-
-// function linkActive() {
-//     //active menu 
-
-//     navLink.forEach(n => n.classList.remove('active'))
-//     this.classList.add('active')
-
-//     //remove menu 
-
-//     const navMenu =document.getElementById('nav-menu')
-//     navMenu.classList.remove('show')
-// }
-// navLink.forEach(n => n.addEventListener('click',linkAction))
-
+function reload(){
+    reloadPageLogo.addEventListener('click',()=>{
+        window.location.reload();
+    })
+}
+reload();

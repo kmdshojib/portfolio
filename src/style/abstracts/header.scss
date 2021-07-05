@@ -222,7 +222,9 @@ svg{
             transition: all 0.5s ease-in-out;
         }
     }
-
+    .nav_link{
+        z-index: 1000;
+    }
 
     .menu-btn {
           width: 40px;

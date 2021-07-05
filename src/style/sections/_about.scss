@@ -22,6 +22,13 @@
     @include respond(phone) {
       padding-bottom: 5rem;
     }
+    .skills{
+      display: flex;
+      font-size:1.6rem;
+    }
+    .skills-padding{
+      padding-right: 100px;
+    }
 
     &__image {
       display: flex;

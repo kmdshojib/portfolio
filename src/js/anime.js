@@ -1,19 +1,15 @@
 import anime from 'animejs';
-import ScrollReveal from 'scrollreveal'
 
 
-// const sr =ScrollReveal();
+
 const loader = anime.timeline();
 const load = document.querySelector('.loader');
-
 
 
 
 function showAnimation(){
   load.classList.remove('hidden')
 }
-
-
 loader.add({
     targets: '#shape',
     strokeDashoffset: [anime.setDashoffset, 0],
@@ -51,19 +47,5 @@ loader.add({
     zIndex:-1
 })
 
-// function sroller(){
-//   setTimeout(()=>{
-//     ScrollReveal.reveal('.section-title'),{
-//       easing: 'cubic-bezier(0.5, 0, 0, 1)',
-//       distance: '30px',
-//       duration: 1000,
-//       desktop: true,
-//       mobile: true,
-//       delay:300,distance:'0px', 
-//       origin:'bottom'
-//     }
 
-//   },3400)
-// }
-// sroller()
 

@@ -21,6 +21,9 @@ $('a[href^="#"]').on('click', function(event) {
       );
   }
 });
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
 
 initSr();
 initTilt();
