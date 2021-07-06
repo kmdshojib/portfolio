@@ -1,7 +1,6 @@
 import anime from 'animejs';
 
 
-
 const loader = anime.timeline();
 const load = document.querySelector('.loader');
 
@@ -12,12 +11,12 @@ function showAnimation(){
 }
 loader.add({
     targets: '#shape',
-    strokeDashoffset: [anime.setDashoffset, 0],
-    easing: 'easeInOutQuart',
+    delay:200,
     duration: 1500,
-    delay: function(el, i) { return i * 250 },
     direction: 'alternate',
     loop: false,
+    easing: 'easeInOutQuart',
+    // strokeDashoffset: [anime.setDashoffset, 0],
   })
   
 loader.add({
@@ -46,6 +45,9 @@ loader.add({
     opacity: 0,
     zIndex:-1
 })
+
+
+
 
 
 

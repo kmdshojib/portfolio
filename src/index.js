@@ -1,7 +1,7 @@
 import initTilt from './js/tilt';
-import anime from './js/anime';
 import initSr from './js/sr';
 import header from './js/header';
+import anime from './js/anime';
 
 
 

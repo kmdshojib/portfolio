@@ -10,13 +10,26 @@
     right: 0;
     height:100%;
     width:100%;
-    z-index: 1000;
+    z-index: 100;
 }
 #logo1{
-    color:$primary-color ;
+    position:fixed;
+   color:$primary-color ;
    width: 100px;
    height: 100px;
 }
 .hidden{
     display: none;
+}
+#shape {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+    // transition: transform 15s cubic-bezier(.77, 0, .175, 1);
+  animation: dash 3s cubic-bezier(.77, 0, .175, 1);
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
