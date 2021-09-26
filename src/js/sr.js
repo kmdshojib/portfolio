@@ -1,4 +1,5 @@
 import assignProps from './assignProps';
+import ScrollReveal from 'scrollreveal'
 
 export default function() {
       const headerProps={
@@ -15,10 +16,10 @@ export default function() {
         desktop: true,
         mobile: true,
       };
-      
+      // const sr = ScrollReveal()
       /* header Section */
       setTimeout( () =>{
-        ScrollReveal().reveal('.logo ',{ mobile: false },
+        ScrollReveal().reveal('.logo ',
         assignProps(
           {
       
@@ -34,7 +35,7 @@ export default function() {
           origin:'bottom'
         },headerProps))
 
-        ScrollReveal().reveal('.b',
+      ScrollReveal().reveal('.b',
       assignProps(
         {
           delay:600,
@@ -47,28 +48,26 @@ export default function() {
           origin:'bottom'
         },headerProps))
         ScrollReveal().reveal('.d',
-      assignProps(
+         assignProps(
         {
           delay:800,
           origin: 'bottom'
         },headerProps))
 
       },2500)
-      /* Section Title */
-
-      ScrollReveal().reveal('.section-title', 
-        assignProps(
-          {
-            delay:300,distance:'0px', 
-            origin:'bottom'
-          }, defaultProps),
-          
-      );
-      
     
-      /* Hero Section */
-     
+
       setTimeout( () =>{
+          /* Section Title */
+      //   ScrollReveal().reveal('.section-title', 
+      //   assignProps(
+      //     {
+      //       delay:300,distance:'0px', 
+      //       origin:'bottom'
+      //     }, defaultProps),
+          
+      // );
+       /* Hero Section */
     
       ScrollReveal().reveal('.hero-title', 
       assignProps(
@@ -124,7 +123,7 @@ export default function() {
       ScrollReveal().reveal('.project-wrapper__image', 
         assignProps(
           {
-            delay: 1000,
+            delay: 700,
             origin: window.innerWidth > 768 ? 'right' : 'bottom'
           }, defaultProps)
       );

@@ -1,5 +1,5 @@
 {
-  "name": "simplefolio",
+  "name": "portfolio",
   "homepage": "https://github.com/kmdshojib/portfolio",
   "version": "1.0.1",
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
@@ -15,8 +15,7 @@
     "url": "git+https://github.com/kmdshojib/portfolio"
   },
   "keywords": [],
-  "author": "Jacobo Martinez",
-  "license": "ISC",
+  "author": "Kamruzamn Shojib",
   "bugs": {
     "url": "https://github.com/kmdshojib/portfolio/issues"
   },
