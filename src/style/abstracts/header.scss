@@ -3,11 +3,6 @@
     --font-semi: 600
 }
 
-:root {
-    --first-color: #4070f4;
-    --second-color: #0E2431;
-
-}
 
 :root {
     --body-font: 'Poppins', sans-serif;
@@ -184,11 +179,6 @@ svg{
         
     }
 }
-// .menu-btn.open .menu-btn_burger::before {
-    
-// .menu-btn.open .menu-btn_burger::before {
-//     transform: rotate(-45deg) translateX(35px, 35px);
-// }
 
 @media (max-width:768px) {
     .nav_menu {

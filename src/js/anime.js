@@ -16,7 +16,6 @@ loader.add({
     direction: 'alternate',
     loop: false,
     easing: 'easeInOutQuart',
-    // strokeDashoffset: [anime.setDashoffset, 0],
   })
   
 loader.add({
